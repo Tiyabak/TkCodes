@@ -4,7 +4,7 @@ A modern and responsive static landing page built using **HTML5** and **CSS3**. 
 
 ## 🌐 Live Demo
 
-👉 https://YOUR_USERNAME.github.io/REPOSITORY_NAME/
+👉  https://tiyabak.github.io/TkCodes/
 
 ---
 
