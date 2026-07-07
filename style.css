@@ -1,0 +1,298 @@
+/* ==========================
+   Global Styles
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    color:#333;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1c1a40;
+    color:white;
+    padding:20px 50px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:rgb(218,170,83);
+}
+
+/* ==========================
+   Hero Section
+========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 50px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-image{
+    width:45%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.hero-text h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.hero-text button{
+    padding:12px 25px;
+    background:#1c1a40;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:15px;
+    transition:.3s;
+}
+
+.hero-text button:hover{
+    background:#7594d7;
+}
+
+/* ==========================
+   About
+========================== */
+
+.about{
+    background:#f4f4f4;
+    text-align:center;
+    padding:80px 50px;
+}
+
+.about h2{
+    font-size:40px;
+    color:#1c1a40;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ==========================
+   Services
+========================== */
+
+.services{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.services h2{
+    font-size:40px;
+    color:#1c1a40;
+    margin-bottom:50px;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#1c1a40;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+/* ==========================
+   Contact
+========================== */
+
+.contact{
+    background:#f4f4f4;
+    text-align:center;
+    padding:80px 50px;
+}
+
+.contact h2{
+    font-size:40px;
+    color:#1c1a40;
+    margin-bottom:20px;
+}
+
+.contact p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.contact-info{
+    margin-top:25px;
+}
+
+.contact-info p{
+    margin:10px 0;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    background:#1c1a40;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+/* ==========================
+   Responsive Design
+========================== */
+
+@media (max-width:768px){
+
+    /* Header */
+    header{
+        flex-direction:column;
+        padding:20px;
+        text-align:center;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        margin-top:20px;
+    }
+
+    /* Hero Section */
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 20px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+        margin-top:30px;
+    }
+
+    .hero-text h2{
+        font-size:36px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+
+    .hero-text button{
+        margin:10px 5px;
+    }
+
+    /* About */
+    .about{
+        padding:60px 20px;
+    }
+
+    .about h2{
+        font-size:32px;
+    }
+
+    /* Services */
+    .services{
+        padding:60px 20px;
+    }
+
+    .services h2{
+        font-size:32px;
+    }
+
+    .service-container{
+        flex-direction:column;
+    }
+
+    /* Contact */
+    .contact{
+        padding:60px 20px;
+    }
+
+    .contact h2{
+        font-size:32px;
+    }
+
+    /* Footer */
+    footer{
+        padding:20px 10px;
+    }
+
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1c1a40;
+    color:white;
+    padding:20px 50px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
